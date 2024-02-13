@@ -1,16 +1,33 @@
-- Enumerate_containers.py
-This script is inspired by the Invoke-EnumerateAzureBlobs function from NetSPI/MicroBurst. I encountered issues executing the function within PowerShell, prompting the creation of this Python script. It embodies the same concept of exploiting the URL parameter "?restype=container&comp=list".
+# Enumerate_containers.py
 
-Features:
-Lists container names sourced from enumerate_containers_permutations.txt.
-Allows for the expansion of the list at the user's discretion. However, for each entry, it performs a check on the URL three times. Therefore, caution is advised as this process can be considered a form of brute forcing.
-Functionality
-The script verifies container names exactly as they appear in the file, including both appending and prepending them to the account name.
+> Inspired by the `Invoke-EnumerateAzureBlobs` function from `NetSPI/MicroBurst`, this Python script is designed to leverage the URL parameter "?restype=container&comp=list" for listing Azure blob storage containers.
 
-Example:
-Given an account name "allgoodcompany" and a permutation list containing "storage", the script checks against the URL as follows:
+## 🚀 Features
 
-allgoodcompany
-storageallgoodcompany
-allgoodcompanystorage
-Note: This revision aims to provide a clearer understanding of the script's purpose and usage. Ensure to review any technical details for accuracy to match your implementation.
+- **Container Listing:** Utilizes `enumerate_containers_permutations.txt` for dynamic container name retrieval.
+- **Expandable List:** Easily add to the permutation list. Note: Each entry initiates three checks against the URL, so use judiciously to avoid brute force detection.
+
+## 📋 How It Works
+
+The script checks container names directly from the list, appending and prepending them to the account name for comprehensive coverage.
+
+### 📝 Example Usage
+
+Given an account name `allgoodcompany` and a permutation list entry `storage`, the script performs checks against the URL as follows:
+
+1. `allgoodcompany`
+2. `storageallgoodcompany`
+3. `allgoodcompanystorage`
+
+## 🛠️ Setup and Dependencies
+
+- **Importing the Module:** Run `Import-Module .\Enumerate_containers.psm1` to load the script into your environment.
+- **Trusting the Code:** Use `dir -Recurse .\PathToScript | Unblock-File` to recursively trust the downloaded files.
+
+## ⚠️ Disclaimer
+
+Use this tool responsibly and ethically during penetration testing or with explicit permission from the target organization.
+
+---
+
+*For more details on usage and enhancements, please refer to the comprehensive documentation and examples provided within the script.*
