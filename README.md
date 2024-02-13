@@ -74,7 +74,10 @@ List of blobs:
 - **Use the Python script:** `.\list_blobs_info.py` `<ACCOUNT NAME>` `<CONTAINER NAME>` **to start listing blobs with their details.**
 
 
-
+<br>
+<br>
+<br>
+<br>
 
 
 
