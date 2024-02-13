@@ -73,10 +73,3 @@ userfiles
 web
 $root
 $web
-useast
-useast2
-centralus
-northcentralus
-westcentralus
-westus
-westus2
