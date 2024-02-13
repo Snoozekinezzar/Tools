@@ -16,7 +16,7 @@
 ## 📖 Features
 
 - **Container Listing:** Utilizes `enumerate_containers_permutations.txt` for dynamic container name retrieval.
-- **Expandable List:** Easily add to the permutation list. Note: Each entry initiates three checks against the URL, so use judiciously to avoid brute force detection.
+- **Expandable List:** Easily add to the permutation list. Note: Each entry initiates three checks against the URL, so use judiciously to avoid brute force detection or IP lockout.
 
 ## 📋 How It Works
 
