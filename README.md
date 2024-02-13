@@ -1,4 +1,4 @@
-# Enumerate_containers.py
+# enumerate_containers.py
 
 > Inspired by the `Invoke-EnumerateAzureBlobs` function from `NetSPI/MicroBurst`, this Python script is designed to leverage the URL parameter "?restype=container&comp=list" for listing Azure blob storage containers.
 
@@ -21,12 +21,16 @@ Given an account name `allgoodcompany` and a permutation list entry `storage`, t
 
 ## 🛠️ Setup and Dependencies
 
-- **Importing the Module:** Run `Import-Module .\Enumerate_containers.psm1` to load the script into your environment.
-- **Trusting the Code:** Use `dir -Recurse .\PathToScript | Unblock-File` to recursively trust the downloaded files.
+- **Use the git function:** git clone https://github.com/Snoozekinezzar/Tools.git` to get the script from github.
+- **Getting to your script:** cd /to/your/path` to load the script.
+- **Using:** chmod +x enumerate_containers.py` to make the script into an executable.
+- **Using the Python script:** .\enumerate_containers.py` and type the container name.
+- **If it doesn't find any containers, then edit:** .\enumerate_containers_permutations.txt` to expand on the search parameters.
 
 ## ⚠️ Disclaimer
 
 Use this tool responsibly and ethically during penetration testing or with explicit permission from the target organization.
+It is similar to bruteforcing, so it is important that you are within Azure policies when automatically target the url.
 
 ---
 
