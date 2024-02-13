@@ -22,7 +22,7 @@ def check_container_exists(account_name, container_name):
 
 def enumerate_containers(account_name, permutations_file):
     """
-    Enumerate through a list of container name permutations to find which containers exist,
+    Enumerate through a list of container name permutations to find containers,
     trying the name as is, prepended, and appended to the account name.
     """
     container_names = read_container_names_from_file(permutations_file)
