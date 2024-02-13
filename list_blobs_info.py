@@ -5,17 +5,6 @@ import requests
 from xml.etree import ElementTree
 
 def list_blobs(account_name, container_name):
-    """
-    List blobs in an Azure storage container.
-
-    Parameters:
-    - account_name: Azure storage account name.
-    - container_name: Azure storage container name.
-
-    Returns:
-    - A list of dictionaries with blob details (name, size, last_modified) on success.
-    - None on failure.
-    """
     session = requests.Session()  # Use a session for connection pooling
     url = f"https://{account_name}.blob.core.windows.net/{container_name}?restype=container&comp=list"
     
