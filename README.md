@@ -1,6 +1,6 @@
 ## 💡 Github usage (Linux)
 
-- **Use the git function:** `git clone https://github.com/Snoozekinezzar/Tools.git` **to get the script from GitHub.**
+- **Use the git function:** `git clone https://github.com/Snoozekinezzar/Tools.git` **to get the scripts from GitHub.**
 
 <br>
 <br>
