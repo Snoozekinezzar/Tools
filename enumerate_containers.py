@@ -49,7 +49,7 @@ def enumerate_containers(account_name, permutations_file):
 
 # Example usage
 account_name = input("Enter the Azure Storage account name: ")
-permutations_file = "enumerate_containers_permutations.txt"
+permutations_file = "enumerate_container_permutations.txt"
 
 # Enumerate containers based on permutations
 found_containers = enumerate_containers(account_name, permutations_file)
