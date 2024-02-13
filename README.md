@@ -1,3 +1,7 @@
+## 💡 Github usage (Linux)
+
+- **Use the git function:** `git clone https://github.com/Snoozekinezzar/Tools.git` **to get the script from GitHub.**
+
 # enumerate_containers.py
 
 > Inspired by the `Invoke-EnumerateAzureBlobs` function from `NetSPI/MicroBurst`, this Python script is designed to leverage the URL parameter "?restype=container&comp=list" for listing Azure blob storage containers.
@@ -27,15 +31,52 @@ Given an account name `allgoodcompany` and a permutation list entry `storage`, t
 
 - **Use the git function:** `git clone https://github.com/Snoozekinezzar/Tools.git` **to get the script from GitHub.**
 - **Getting to your script:** `cd /to/your/path` **to get to the script.**
-- **Using:** `chmod +x enumerate_containers.py` **to make the script into an executable.**
-- **Using the Python script:** `.\enumerate_containers.py` **and type the container name.**
+- **Use:** `chmod +x enumerate_containers.py` **to make the script into an executable.**
+- **Use the Python script:** `.\enumerate_containers.py` **and type the container name.**
 - **If it doesn't find any containers, then edit:** `.\enumerate_containers_permutations.txt` **to expand on the search parameters.**
-
-## ⚠️ Disclaimer
-
-Use this tool responsibly and ethically during penetration testing or with explicit permission from the target organization.
-It is similar to bruteforcing, so it is important that you are within Azure policies when automatically target the url.
 
 ---
 
 *For more details on usage and enhancements, please refer to the comprehensive documentation and examples provided within the script.*
+
+# list_blobs_info.py
+
+> This script combines the account name and container name to list blobs, detailing file types, sizes, and modification dates.
+>
+> [Microsoft API: List Blobs](https://learn.microsoft.com/en-us/rest/api/storageservices/list-blobs?tabs=microsoft-entra-id)
+
+## 📖 Features
+
+- **Blob Information:** Lists blobs with file types, sizes, and last modified dates.
+- **Combines Account and Container Names:** Efficiently retrieves blob information by combining account and container names.
+
+## 📋 How It Works
+
+The script requires the account name and container name as inputs to list the blobs and their information.
+
+### 📝 Example of output
+
+List of blobs:
+- Name: Employee.ovpn, Size: 2921 bytes, Last Modified: Mon, 06 Aug 2023 11:09:12 GMT
+- Name: permission.pem, Size: 3002 bytes, Last Modified: Mon, 18 Aug 2023 11:08:05 GMT
+- Name: logocompany.png, Size: 10763 bytes, Last Modified: Mon, 16 Aug 2022 11:08:05 GMT
+
+## 🛠️ Setup and Dependencies (Linux)
+
+- **Getting to your script:** `cd /to/your/path` **to get to the script.**
+- **Use:** `chmod +x list_blobs_info.py` **to make the script into an executable.**
+- **Use the Python script:** `.\list_blobs_info.py` `<ACCOUNT NAME>` `<CONTAINER NAME>` **to start listing blobs with their details.**
+
+
+
+
+
+
+## ⚠️ Disclaimer
+
+These tools should be used responsibly and ethically during penetration testing or with explicit permission from the target organization. Ensure compliance with Azure policies when accessing URLs to list the information.
+
+---
+
+*Refer to the comprehensive documentation and examples provided within the script for further details on usage and enhancements.*
+
