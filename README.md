@@ -23,10 +23,10 @@ Given an account name `allgoodcompany` and a permutation list entry `storage`, t
 2. `storageallgoodcompany`
 3. `allgoodcompanystorage`
 
-## 🛠️ Setup and Dependencies
+## 🛠️ Setup and Dependencies (Linux)
 
 - **Use the git function:** git clone https://github.com/Snoozekinezzar/Tools.git` to get the script from github.
-- **Getting to your script:** cd /to/your/path` to load the script.
+- **Getting to your script:** cd /to/your/path` to get to the script.
 - **Using:** chmod +x enumerate_containers.py` to make the script into an executable.
 - **Using the Python script:** .\enumerate_containers.py` and type the container name.
 - **If it doesn't find any containers, then edit:** .\enumerate_containers_permutations.txt` to expand on the search parameters.
