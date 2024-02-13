@@ -1,6 +1,10 @@
 # enumerate_containers.py
 
 > Inspired by the `Invoke-EnumerateAzureBlobs` function from `NetSPI/MicroBurst`, this Python script is designed to leverage the URL parameter "?restype=container&comp=list" for listing Azure blob storage containers.
+> 
+> [NetSPI/Microburst](https://github.com/NetSPI/MicroBurst)
+> 
+> [Microsoft API: list blobs](https://learn.microsoft.com/en-us/rest/api/storageservices/list-blobs?tabs=microsoft-entra-id)
 
 ## 🚀 Features
 
