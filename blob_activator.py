@@ -21,7 +21,7 @@ def access_blob(storage_account_name, container_name, blob_name):
     # Downloading and printing the content of the blob
     blob_data = blob_client.download_blob()
     content = blob_data.readall()
-    print(content.decode('utf-8'))  # Assuming the content is text and UTF-8 encoded. Future
+    print(content.decode('utf-8'))  # Assuming the content is text and UTF-8 encoded.
 
 if __name__ == "__main__":
     storage_account_name = input("Storage account name: ")
