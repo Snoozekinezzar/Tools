@@ -73,6 +73,58 @@ List of blobs:
 - **Use:** `chmod +x list_blobs_info.py` **to make the script into an executable.**
 - **Use the Python script:** `.\list_blobs_info.py` `<ACCOUNT NAME>` `<CONTAINER NAME>` **to start listing blobs with their details.**
 
+<br>
+<br>
+
+# blob_activator.py
+
+> This script combines the account name, container name and specific blob name to access and read a publicly available blob, anonymously.
+
+## 📖 Features
+
+- **Blob Information:** Assuming the content is text and UTF-8 encoded, it will print out the information contained in blob files.
+
+## 📋 How It Works
+
+The script requires the account name, container name and blob name as inputs to access and print out data in the blob.
+
+### 📝 Example of output of a .pem file
+
+-----BEGIN CERTIFICATE-----
+MIIDHzCCAgegAwIBAgIUaEcJmhc/7DjCPPyZLV0fWO1gczwDQYJKoZIhvcNAQEL
+BQAwHzELMAkGA1UEBhMCTkwxEDAOBgNVBAoMB1NlY3VyYSAHhcNMjIwMzIyMTQz
+NjU3WhcNMzIwMzE5MTQzNjU3WjAfMQswCQYDVQQGEwJOTDEQA4GA1UECgwHU2Vj
+dXJhIDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAzepUaYNoTsuWSk
+Zb9pgbIJrMEAp9oJuIGNlMgOxMcTHVix6Scb9Q3odWwBE39BhIc+cy8y3OpeuRq
+ADo98RIlBv8HkVYdOubR84NZvD/ugZfWJMrNCYFzOrRLeY53OGGIxVJessyem5l
+DQYJKoZIhvcNAQELBQADggEBAK5JzdK7q7eYegr93EA+mzm53+qCqdQtdFOAEzA
+dGpQcV9LWKHxbiVMl8/QrGhlD5LNsLmNsrtWKbGAcHMPDPdwWCjsF7YALlu9Js9
+lCRwyHaUTIss6YtnRVrcQSsclVzCG5yJoX8PHskGtvzg8Bs1xsPM5H9qXvjCQqU
+9wYNe6QaCbpznNbewoqijLWkwDiHbmuxwBoTp8fFxjtFnBXYsf4oTPKFeBqIq07
+SP9OM5Qp0jQLt54H1NcTNe+6Vw2/11ZH6NOiLgHBIK+50sCiYeh8d35t+PLrH4k
+6CXu0gLU3UZeTR65rVpScRGLnS+fLCWgc0MzyuolbBLVYfw=
+-----END CERTIFICATE-----
+-----BEGIN PRIVATE KEY-----
+MIIEvwIBADANBgkhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDM3qVGmDaE7Llk
+pGW/aYGyCazBAKfabiBjZTIDsTHEx1YseknG/UN6HVsARN/QYSJnPnMvMtzqXrk
+agA6PfESJQb/B5FWHrm0fODWbw/7oGX1iTKzQmBczq0S3mOdzhhoCMVSXrLMnpu
+3NSGRbUg2x7xJd+eDtHLfcqVAWS21QvcNnjWkIi+zD1mh8kuNpz6hd3MH6lZfuz
+FdFIPBGQAtUCgYEAjnnDRCh7A14fXQJHSsr2kd22JNODQ2kNKM0LMMdTBVk0pZ+
+3Shz3th77ueB0NIzwDunKtIrpKHfMS/Y9CLaqB9p+LayFYqAfXl2mFB/NKje8cm
+pGvRQa3xtQPU/VzJ1Xs/K/nzXpnlCy2gV79E2UE6AFAgoH7XjA5e4hO5O0CgYEA
+qrrK+dhjhwP05bNa91F21uBHc+sl/d/5MN1w9ou1XE9IsQ0vDTiN4OwyAhmrNnO
+fG/mnlpXfPzZmtTo58HnYruDrVHpdeIrZOmFsgtONkihW0X+189SSbBhESw3NUP
+lOBF9rmceXDUGKxdL0Z3cp8IZ7xbmnv37bQ8/brTfECgYB38BuP+2JifsqhCO4V
+QwqzeI6QhETFZNpwBMLua/J6B/beDYNQNylWNmhMZ5UrL+ZE+q83nHb6OuQvwwm
+2JfOQqPWC33oDLgfSCJM4kZIt2K3AIozYmoSbRa1g5WEL/2Z39/Kg+qjz1cX1UG
+h3A+1OWJej8nKg9XTz25Ra1qzg==
+-----END PRIVATE KEY-----
+
+## 🛠️ Setup and Dependencies (Linux)
+
+- **Getting to your script:** `cd /to/your/path` **to get to the script.**
+- **Use:** `chmod +x blob_activator.py` **to make the script into an executable.**
+- **Use the Python script:** `.\blob_activator.py` **and type the container name, then storageaccount name, then blob name.**
 
 <br>
 <br>
