@@ -90,6 +90,7 @@ The script requires the account name, container name and blob name as inputs to 
 
 ### 📝 Example of output of a .pem file
 
+```
 -----BEGIN CERTIFICATE-----
 MIIDHzCCAgegAwIBAgIUaEcJmhc/7DjCPPyZLV0fWO1gczwDQYJKoZIhvcNAQEL
 BQAwHzELMAkGA1UEBhMCTkwxEDAOBgNVBAoMB1NlY3VyYSAHhcNMjIwMzIyMTQz
@@ -119,6 +120,7 @@ QwqzeI6QhETFZNpwBMLua/J6B/beDYNQNylWNmhMZ5UrL+ZE+q83nHb6OuQvwwm
 2JfOQqPWC33oDLgfSCJM4kZIt2K3AIozYmoSbRa1g5WEL/2Z39/Kg+qjz1cX1UG
 h3A+1OWJej8nKg9XTz25Ra1qzg==
 -----END PRIVATE KEY-----
+```
 
 ## 🛠️ Setup and Dependencies (Linux)
 
@@ -131,7 +133,53 @@ h3A+1OWJej8nKg9XTz25Ra1qzg==
 <br>
 <br>
 
+# database_connector.py
 
+> And alternative and pythoninc way to access databases using SQL. 
+
+## 📖 Features
+
+- **help function:** Gets a list of commonly used drivers
+- **SQL query:** Enables the use of SQL to query the database tables 
+
+## 📋 How It Works
+
+The script guides you through the different information needed to access the database and enables you to write SQL to query the database tables.
+
+### 📝 Example Usage
+
+```
+┌──┌──(brokenazure㉿ctf)
+└─$ ./database_connector.py
+Enter server name: <servername>.database.windows.net
+Enter database name: <databasename>
+Enter username: <user>
+Enter password: <password>
+Enter driver (type 'help' to list common drivers):
+Enter driver: {ODBC Driver 17 for SQL Server}
+Connected to the database. Type 'exit' to quit.
+Enter SQL command: select table_name from <databasename>.information_schema.tables
+['table_name']
+('database_firewall_rules',)
+('employee_data',)
+```
+
+```
+Enter SQL command: select * from employee_data
+['usernames', 'informations']
+('Employee123', 'coolstuff',)
+```
+
+## 🛠️ Setup and Dependencies (Linux)
+
+- **Use the git function:** `git clone https://github.com/Snoozekinezzar/Tools.git` **to get the script from GitHub.**
+- **Getting to your script:** `cd /to/your/path` **to get to the script.**
+- **Use:** `chmod +x database_connector.py` **to make the script into an executable.**
+- **Use the Python script:** `.\database_connector.py` **and type the container name.**
+
+---
+
+*For more details on usage and enhancements, please refer to the comprehensive documentation and examples provided within the script.*
 
 ## ⚠️ Disclaimer
 
